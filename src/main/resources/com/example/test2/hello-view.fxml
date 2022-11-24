@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" prefHeight="483.0" prefWidth="480.0" style="-fx-background-color: linear-gradient(pink, white);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.HelloController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+
+
+    <Label fx:id="welcomeText" prefHeight="17.0" prefWidth="24.0" text="SQL" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label fx:id="Select" text="Select table " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Label fx:id="column" text="Help" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <ListView fx:id="listview" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.rowSpan="3" />
+    <TextField fx:id="searchEntry" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="whichthing" GridPane.rowIndex="3" />
+    <Button fx:id="search" onAction="#sendSQLquery" text="Search" GridPane.rowIndex="4" />
+    <Button onAction="#Stop" text="Exit" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+    <Button onAction="#onSaveToFile" text="Save" GridPane.rowIndex="5" />
+    <Button onAction="#LoadInfo" text="Load" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   <Label text="Select content" GridPane.rowIndex="2" />
+
+
+</GridPane>
